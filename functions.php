@@ -94,4 +94,102 @@ function content_chooser()
 <? }
 add_shortcode('content_chooser', 'content_chooser');
 }
-?>
+
+
+
+
+require_once( 'includes/metabox/init.php' );
+require_once( 'includes/metabox/metaboxes.php' );
+
+
+
+/**** custom post type for crowedsourch ****/
+
+//=========================================
+// Crowedsourced Post Type
+//=========================================	
+add_action( 'init', 'register_crowedsourced_post_type' );
+function register_crowedsourced_post_type() {
+   register_post_type( 'crowedsourced',
+		array(
+			'labels' => array(
+				'name'			=> __('Crowedsourced',"rms"),
+				'singular_name' => __('Crowedsourced',"rms"),
+				'add_new'		=> __('Add Crowedsourced',"rms"),
+				'add_new_item'	=> __('Add New Crowedsourced',"rms"),
+				'edit_item'		=> __('Edit Crowedsourced',"rms"),
+				'new_item'		=> __('New Crowedsourced',"rms"),
+				'not_found'		=> __('No Crowedsourced found',"rms"),
+				'not_found_in_trash' => __('No Crowedsourced found in Trash',"rms"),
+				'menu_name'		=> __('Crowedsourced',"rms"),
+			),
+			'description' => 'Manipulating with our team',
+			'public' => true,
+			'show_in_nav_menus' => true,
+			'supports' => array(
+				'title',
+				'thumbnail',
+				'editor'
+				
+			),
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'menu_position' => 32,
+			'has_archive' => true,
+                        'menu_icon' => 'dashicons-grid-view',
+			'query_var' => true,
+			'rewrite' => array('slug' => 'crowedsourced'),
+			'capability_type' => 'post',
+			'map_meta_cap'=>true,
+			'taxonomies' => array('tag')
+			
+		)
+	);
+	
+register_taxonomy(
+			'cat',
+			array (0 => 'crowedsourced',),
+			array(
+				'hierarchical' => true,
+				'label' => 'Categories',
+				'show_ui' => true,
+				'query_var' => true,
+				'rewrite' => array('slug' => 'cat'),
+				'singular_label' => 'Category'
+				)
+		);
+register_taxonomy(
+			'tags',
+			array (0 => 'crowedsourced',),
+			array(
+				'hierarchical' => false,
+				'label' => 'Tags',
+				'show_ui' => true,
+				'query_var' => true,
+				'rewrite' => array('slug' => 'tags'),
+				'singular_label' => 'Tag'
+				)
+		);
+	
+	
+	/**
+	add_custom_taxonomies_portfolio();
+	**/
+}
+
+	
+
+function change_default_title( $title ){
+     $screen = get_current_screen();
+ 
+     if  ( 'crowedsourced' == $screen->post_type ) {
+          $title = 'Full Name';
+     }
+ 
+     return $title;
+}
+ 
+add_filter( 'enter_title_here', 'change_default_title' );	
+	
+	
+	

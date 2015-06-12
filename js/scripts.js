@@ -70,3 +70,80 @@ jQuery(document).ready(function($) {
     });    
     
 });
+
+
+
+
+
+
+
+jQuery(document).ready(function($) {
+
+$( function () {
+    $('.supplier-search li').each(function(){
+        var searchVal = $(this).children().text().replace(/\s/g, "").toLowerCase();
+        $(this).children().addClass(searchVal);
+    });
+     $('.supplier-search li').first().removeClass().addClass('all');
+     // Create the dropdown base
+      $("<div class='select_area'><i class='fa fa-glass filter_icon'></i><select id='filter-select' />").appendTo(".supplier-search");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "*",
+          "html" : "FILTER POSTS"
+      }).appendTo(".supplier-search select");
+      
+      // Populate dropdown with menu items
+      $(".supplier-search a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   :"."+el.attr("class"),
+           "text"    : el.text()
+       }).appendTo(".supplier-search select");
+      });
+  var $container = $('#container');
+
+  $container.isotope({})
+
+  $('#filter-select').change( function() {
+    $container.isotope({
+      filter: this.value
+    });
+  });
+
+});
+
+});  
+
+
+
+jQuery(document).ready(function($) {
+	
+	
+
+$('.isotope').isotope({
+    itemSelector: '.item',
+  
+  });
+	var $container = $('#container')
+// initialize Isotope
+$container.isotope({
+  // options...
+  resizable: false, // disable normal resizing
+  // set columnWidth to a percentage of container width
+  masonry: { columnWidth: $container.width() / 3 }
+});
+
+// update columnWidth on window resize
+$(window).smartresize(function(){
+  $container.isotope({
+    // update columnWidth to a percentage of container width
+    masonry: { columnWidth: $container.width() / 3 }
+  });
+});
+
+
+
+  });

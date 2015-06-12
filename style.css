@@ -64,11 +64,12 @@
 	#banner a.active, #banner a:hover, .bar a:hover { color: #5ccae7; background: #fff; }
 	#banner a.active:hover, .wrap.overlay a:hover { color: #fff; background: #5ccae7; }
 	#buttons { width: 94%; max-width: 750px; margin: 30px auto; }
-	.section { text-align: center; padding: 100px 0; }
-	.section h2 { color: #464646; font: normal 40px/40px "Antonio-Regular", sans-serif; float: left; width: 30.33%; margin: 0 1.5%; }
+	section.padded, .paddedsection { text-align: center; padding: 100px 0 !important; }
+	.section h2 { color: #464646; font: normal 40px/48px "Antonio-Regular", sans-serif; float: left; width: 30.33%; margin: 0 1.5%; }
 	.section .line { height: 2px; width: 30.33%; float: left; margin: 19px 1.5%; background: #464646; } 
 	.section header { max-width: 70%; margin: 0 auto; }
 	.span3 { width: 30.33%; margin: 0 1.5%; float: left; }
+.span6 { width: 47%; margin: 0 1.5%; float: left; }
 	.section#itworks .row { max-width: 80%; margin: 0 auto; }
 	.section .span3 { margin-top: 80px; }
 	.section .span3 img { display: block; margin: 0 auto 25px; }
@@ -82,7 +83,7 @@
 	.section#ways .span3 span { max-width: 70%; }
 	.section#ways .circle { background: #5ccae7; border-radius: 250px; padding: 20px; width: 120px; height: 120px; position: relative; margin: 0 auto 25px; } 
 		.section#ways.bufferapp .circle { border-radius: 0; background: #464646; position: relative; }
-        .section#ways.bufferapp .circle .hover { display: none; line-height: 36px; font-size: 26px; position: absolute; top: 0 left: 0; right: 0; bottom: 0; background: #5ccae7; width: 80%; height: 80%; padding: 10%; text-align: center; z-index: 1000; color: #fff;}
+        .section#ways.bufferapp .circle .hover { display: none; line-height: 36px; font-size: 26px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #5ccae7; width: 100%; height: 93%; padding: 10% 0 0 0; text-align: center; z-index: 1000; color: #fff;}
     .section#ways.bufferapp .circle:hover > .hover { display: block; }
 	.section#ways img { position: absolute; top: 50%; left: 50%; }
 	.section#ways .button { border: 3px solid #fff; padding: 15px 20px; text-align: center; margin: 40px auto 0; display: block; color: #fff; text-decoration: none; max-width: 45%; } 
@@ -90,7 +91,7 @@
 		.section#ways.bufferapp .button { border-color: #464646; color: #464646; } .section#ways.bufferapp .button:hover { background: #464646; color: #fff; }
 	.section section.info { border-bottom: 3px solid #464646; padding-bottom: 80px; margin-bottom: 150px; }
 	.section section.info h2 { width: 100%; float: none; margin-bottom: 30px; text-align: left; margin-left: 0; }
-	.section section.info .frame { float: left; background: #555555; width: 22%; padding: 3% 4%; margin-top: 78px; }
+	.section section.info .frame { float: left; background: #555555; width: 22%; padding: 3% 4%;  }
 	.section section.info .text { float: right; width: 68.4%; margin-left: 1%; text-align: left; font-size: 22px; line-height: 36px; text-transform: none !important; }
 	.section section.info .text h2 { text-transform: uppercase !important; }
 	.section section.info .scroller { background: #5ccae7; border-radius: 250px; margin: 80px auto -95px; display: block; height: 30px; width: 30px; position: relative; }
@@ -101,8 +102,8 @@
 	.blog-section .bar { padding: 40px 60px; color: #fff; margin: 40px 0 40px -5px;}
 	
 	.blog-section h1 { font-size: 30px; color: #555555; font-family: 'Antonio-Regular'; }
-	.blog-section h2 { font-size: 24px; color: #555555; font-family: 'Antonio-Regular'; }
-	.blog-section h3 { font-size: 20px; color: #555555; font-family: 'Antonio-Regular'; }
+	.blog-section h2 { font-size: 24px !important; color: #555555; font-family: 'Antonio-Regular'; float: none !important; margin: 0 !important;}
+	.blog-section h3 { font-size: 20px !important; color: #555555; font-family: 'Antonio-Regular'; text-transform: none !important; text-align: left !important; }
 	.blog-section h4 { font-size: 16px; color: #555555; font-family: 'Antonio-Regular'; }
 	.blog-section .bar section.info h2 { color: #fff; text-transform: uppercase; font-size: 40px; font-weight: 400; float: left; width: 60%; }
 	.bar h2, .bar h1 { font-size: 50px; line-height: 60px; float: left; }
@@ -118,8 +119,8 @@
 	#footer-nav ul { width: 255px; margin: 0 auto; }
 	#footer-nav a { color: #fff; text-decoration: none; font-size: 20px; line-height: 26px; } #footer-nav a:hover { color: #5ccae7; }
 	label { font-size: 32px; text-align: left; }
-	input[type=text], input[type=email], input[type=password] { height: 30px; border: 1px solid #555; border-radius: 3px; padding: 4px; font-size: 16px; margin: 10px auto; display: block; }
-	textarea { border: 1px solid #555; border-radius: 3px; padding: 4px; font-size: 16px; margin: 10px auto; display: block; }
+	input[type=text], input[type=email], input[type=password], .input_control { height: 30px; border: 1px solid #555 !important; border-radius: 3px !important; padding: 4px; font-size: 16px; margin: 10px auto; display: block; width: 100%; min-width: 0 !important; }
+	textarea, textarea.input_control { border: 1px solid #555 !important; border-radius: 3px !important; padding: 4px; font-size: 16px; margin: 10px auto; display: block; min-height: 150px; max-height: 250px; }
 	input[type=submit], #bufferapp_sbtn, #restbut, .triggerme { cursor:pointer; background: #5ccae7; border-radius: 3px; height: 50px; line-height: 30px; color: #fff; font-size: 20px; padding: 10px 20px; border: 0; }
 	.triggerme { display: block; float: right; margin: 20px 1%; text-align: center; line-height: 50px; font-size: 30px; max-width: 200px; }
 	input[type=submit]:hover, .triggerme:hover { background: #fff; color: #5ccae7; }
@@ -198,7 +199,7 @@
 	.blog-section .entry-content p { margin-bottom: 25px; }
 	.ecae-link { display: block; float: right; text-transform: uppercase; padding: 4px 10px; border: 2px solid #464646; color: #464646; text-decoration: none; font-weight: bold; }
 	.ecae-link:hover { background: #464646; color: #fff; }
-	.sidebar { float: right; width: 25%; max-width: 300px; text-align: left; }
+	.sidebar { float: right;  max-width: 300px; text-align: left; width: 25%; }
 	.sidebar a { color: #464646; text-decoration: none; }
 	.sidebar a:hover { text-decoration: underline; }
 	.sidebar label { display: none; }
@@ -208,7 +209,7 @@
 	.widget-container:after { 	visibility: hidden; display: block; content: ""; clear: both; height: 0; }
 	.widget-container li { list-style-type:decimal; }
 	.blue-widget, .gray-widget { color: #fff; text-align: center; padding: 30px; background: #5ccae7; margin: 30px auto; font-size: 24px; }
-	.blue-widget span, .gray-widget span { font-size: 42px; line-height: 62px; }
+	.blue-widget span, .gray-widget span { font-size: 34px; line-height: 62px; }
 	.blue-link:hover { text-decoration: none; }
 	.blue-widget:hover, .gray-widget { background: #464646; }
 	.gray-widget a { background: #fff; padding: 4px 8px; font-size: 16px; margin: 10px auto; display: block; }
@@ -218,7 +219,7 @@
 	.bulkly { text-align: center; color: #fff; background: #464646; padding: 20px; }
 	.bulkly .span3 { margin-top: 30px; }
 	.bulkly h3, .bulkly h5 { color: #fff; }
-	.bulkly h3 { font-size: 40px; padding-bottom: 20px;}
+	.bulkly h3 { font-size: 40px !important; padding-bottom: 20px; text-align: center !important; }
 	.bulkly h5 { font-family: "Antonio-Light"; }
 	.blue-circle { background: #5ccae7; width: 100px; height: 100px; border-radius: 250px; margin: 0 auto 20px; position: relative; }
 	.blue-circle img { width: 55%; margin: 0 auto; display: block; height: auto; position: absolute; left: 50%; top: 50%; }
@@ -281,14 +282,18 @@
     .account-label { float: left; margin: 40px 5px 0; }
     .af-element.poweredBy { display: none !important; }
 	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { width:46px !important; height: 40px !important; line-height: 40px; }
-	.ui-datepicker th, .ui-timepicker-div { display: none !important; }
+	.ui-datepicker th { display: none !important; }
+
+    .paddedsection .general-content, .general-content { font-size: 16px; line-height: 24px; max-width: 980px; margin: 0 auto 25px; width: 96%; padding: 0 2%; text-transform: none; font-family: "Open Sans", sans-serif; text-align: left; }
+form { margin: 40px auto 40px 0; width: 80%; }
+.layout-control-group { width: 46%; padding-right: 4%; float: left; }
 
 /* 	======================================================================== 
 		TRANSITIONS
 	========================================================================  */
 
-	.fade { transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; -webkit-transition: 0.3s; }
-	
+	.fade { opacity: 1.0 !important; transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; -webkit-transition: 0.3s; }
+    .fade.fixme, .fade.button { opacity: 1 !important; }
 	
 /* 	======================================================================== 
 		MEDIA QUERIES
@@ -302,12 +307,13 @@
 		.blog-section .bar section.info h2 {  font-size: 30px; line-height: 36px; font-weight: 400; float: none; width: 100%; text-align: center; }
 		.blog-section .bar a { float: none; }
 		.blog-section .info { margin: 0 !important; padding: 0 !important; border: 0 !important; }
-		
+        .sidebar { float: none; width: 100%; max-width: 600px; margin: 0 auto 25px; }	
 	}
 
     @media all and (max-width: 980px) {
         .section .blog-section { width: 100%; float: none; margin: 0 auto 40px; }
-        #sidebar { display: none; }
+
+        form { width: 100%; }
     }
 	
 	@media all and (max-width: 920px) {
@@ -342,8 +348,8 @@
 	
 	@media all and (max-width: 560px) {
 	
-		.section .span3 { float: none; width: 90%; margin: 30px auto; display: block; }
-		.section .span3 span { max-width: 100%; }
+		.section .span3, .section .span6 { float: none; width: 90%; margin: 30px auto; display: block; }
+		.section .span3 span, .section .span6 span { max-width: 100%; }
 		.section section.info h2 { font-size: 24px; line-height: 32px; }
 		.table .title .circle { top: -10px; left: -10px; width: 60px; height: 60px; }
 		.table .title .circle .cost { font-size: 30px; line-height: 36px; }
@@ -351,6 +357,7 @@
 		table.reg td { display: block; width: 100%; }
 		.wrap.overlay { top: 20px; }
 		#banner h2 { font-size: 20px; line-height: 30px; }
+        .layout-control-group { width: 100%; padding: 0; }
 		
 	}
 	
@@ -423,40 +430,367 @@
 	}
 	
 	.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
-.ui-timepicker-div dl { text-align: left; }
-.ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
-.ui-timepicker-div dl dd { margin: 0 10px 10px 40%; }
-.ui-timepicker-div td { font-size: 90%; }
-.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
-.ui-timepicker-div .ui_tpicker_unit_hide{ display: none; }
+    .ui-timepicker-div dl { text-align: left; }
+    .ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+    .ui-timepicker-div dl dd { margin: 0 10px 10px 40%; }
+    .ui-timepicker-div td { font-size: 90%; }
+    .ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+    .ui-timepicker-div .ui_tpicker_unit_hide{ display: none; }
 
-.ui-timepicker-rtl{ direction: rtl; }
-.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
-.ui-timepicker-rtl dl dt{ float: right; clear: right; }
-.ui-timepicker-rtl dl dd { margin: 0 40% 10px 10px; }
+    .ui-timepicker-rtl{ direction: rtl; }
+    .ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+    .ui-timepicker-rtl dl dt{ float: right; clear: right; }
+    .ui-timepicker-rtl dl dd { margin: 0 40% 10px 10px; }
 
-/* Shortened version style */
-.ui-timepicker-div.ui-timepicker-oneLine { padding-right: 2px; }
-.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time, 
-.ui-timepicker-div.ui-timepicker-oneLine dt { display: none; }
-.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time_label { display: block; padding-top: 2px; }
-.ui-timepicker-div.ui-timepicker-oneLine dl { text-align: right; }
-.ui-timepicker-div.ui-timepicker-oneLine dl dd, 
-.ui-timepicker-div.ui-timepicker-oneLine dl dd > div { display:inline-block; margin:0; }
-.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_minute:before,
-.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_second:before { content:':'; display:inline-block; }
-.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_millisec:before,
-.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_microsec:before { content:'.'; display:inline-block; }
-.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide,
-.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide:before{ display: none; }
+    /* Shortened version style */
+    .ui-timepicker-div.ui-timepicker-oneLine { padding-right: 2px; }
+    .ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time, 
+    .ui-timepicker-div.ui-timepicker-oneLine dt { display: none; }
+    .ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time_label { display: block; padding-top: 2px; }
+    .ui-timepicker-div.ui-timepicker-oneLine dl { text-align: right; }
+    .ui-timepicker-div.ui-timepicker-oneLine dl dd, 
+    .ui-timepicker-div.ui-timepicker-oneLine dl dd > div { display:inline-block; margin:0; }
+    .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_minute:before,
+    .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_second:before { content:':'; display:inline-block; }
+    .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_millisec:before,
+    .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_microsec:before { content:'.'; display:inline-block; }
+    .ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide,
+    .ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide:before{ display: none; }
 
-.hasDatepicker, #alt_example_4_alt, #alt_example_5_alt { margin: 10px auto; }
-.hasDatepicker { display: block; }
-.ui-datepicker-inline { width: 70% !important; margin: 30px auto;}
-.ui_tpicker_hour, .ui_tpicker_minute { float: none !important; width: 70%; padding-left: 25%; }
-.ui_tpicker_time { float: none !important; padding-left: 45px !important; }
-.ui-timepicker-div dl dt, .ui-timepicker-div dl dt { padding-top: 0 !important; }
+    .hasDatepicker, #alt_example_4_alt, #alt_example_5_alt { margin: 10px auto; }
+    .hasDatepicker { display: block; }
+    .ui-datepicker-inline { width: 70% !important; margin: 30px auto;}
+    .ui_tpicker_hour, .ui_tpicker_minute { float: none !important; width: 70%; padding-left: 25%; }
+    .ui_tpicker_time { float: none !important; padding-left: 45px !important; }
+    .ui-timepicker-div dl dt, .ui-timepicker-div dl dt { padding-top: 0 !important; }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #5ccae7 !important; color: #fff !important; text-align: center !important; }
-.ui-widget-content { border: 0 !important; }
-.ui-datepicker-calendar { min-height: 300px; }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #5ccae7 !important; color: #fff !important; text-align: center !important; }
+    .ui-widget-content { border: 0 !important; }
+    .ui-datepicker-calendar { min-height: 300px; }
+    .ui-state-default.ui-state-active { background: #464646 !important; }
+    .ui-widget-content.ui-slider { border: 1px solid #aaaaaa !important;}
+    .ui-slider-handle.ui-state-default { width: 15px !important; height: 15px !important; }
+	
+	
+	
+	
+
+/**************** last dev's styles *****************/
+
+#container {
+
+
+
+}
+
+.masonary_container{
+margin: 30px auto!important;
+ width: 100%!important;
+}
+
+.item {
+  width:250px;
+  height: auto;
+  margin: 3px;
+  float: left;
+  color: #464647;
+  font-weight: normal;
+  margin-bottom:10px;
+  display:block;
+  overflow:hidden;
+  margin:5px;
+  border:1px solid #555555;
+}
+
+.item  .content_area {
+padding:5px 10px;
+font-size: 14px;
+line-height: 22px;
+font-family:"Open Sans",sans-serif;
+text-transform: initial;
+}
+.item  .content_area p{
+	font-size: 14px;
+    line-height: 22px;
+	font-family:"Open Sans",sans-serif;
+	text-transform: initial;
+}
+
+.item .title_area{
+background: none repeat scroll 0 0 #555555;
+color: #fff;
+display: block;
+overflow: hidden;
+text-align:center;
+
+}
+
+
+
+.featured{
+  border:1px solid #5ccae7;
+}
+
+
+.featured .title_area{
+background: none repeat scroll 0 0 #5ccae7;
+
+}
+
+
+.item .title_area h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 0;
+  display:block;
+  text-transform: uppercase;
+}
+
+
+.title_area .tweet_now {
+border: 1px solid #fff;
+display: inline-block;
+font-size: 11px;
+margin: 3px 5px;
+overflow: hidden;
+padding: 0 8px;
+position: relative;
+text-align: center;
+width: 90px;
+
+}
+
+.title_area .tweet_now  a{
+color: #fff;
+font-size: 11px;
+display:block;
+text-decoration:none;
+text-transform: uppercase;
+}
+
+.meta_area > div {
+  float: left;
+  margin-top: 20px;
+
+}
+.meta_area  .profile_pic{
+  width: 35%;
+  display:block;
+  overflow:hidden;
+}
+
+.meta_area  .profile_pic img{
+	max-width:100%;
+	border-radius:50%;
+
+}
+.meta_area  .extra_info{
+  width: 65%;
+
+}
+.meta_area{
+display: block;
+overflow: hidden;
+padding: 5px 10px;
+
+}
+
+
+.profile_name > span {
+  display: block;
+  float: left;
+
+  margin-left: 5px;
+
+  text-transform: uppercase;
+  width: 109px;
+  text-align: right;
+}
+.profile_name > span a {
+  display: block;
+  text-decoration:none;
+  font-size: 12px;
+  color: #252525;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.profile_name > span:first-child{
+  width: 30px;
+  overflow:hidden;
+  margin-left:0px;
+    padding-left: 5px;
+}
+.profile_name img {
+
+  max-width:100%;
+}
+
+.extra_info .web_url{
+display:block;
+text-align: right;
+}
+
+.extra_info .web_url a{ 
+  color: #252525;
+  display: block;
+  font-size: 10px;
+  margin-bottom: 0;
+  margin-left: 40px;
+  margin-right: 5px;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-transform: initial;
+}
+
+
+.item .tags {
+font-size: 9px;
+margin-left: 15px;
+text-align: left;
+border-top:1px solid #ccc;
+}
+.supplier-search{
+	display: inline-block;
+	float: left;
+	text-align: center;
+	width: 100%;
+
+}
+
+.postform {
+	border-radius: 0;
+	height: 45px;
+	padding-right: 25px;
+	text-align: right;
+	width: 250px;
+	font-size: 17px;
+	padding-left: 70px;
+}
+
+.supplier-search select {
+	border-radius: 0;
+	display: inline-block;
+	height: 45px;
+	margin-top: 0px;
+	position: relative;
+	text-align: center;
+	width: 252px;
+	font-size: 17px;
+	padding-left: 50px;
+}
+
+.searchandfilter {
+ display:inline-block;
+  position: relative;
+  width: 265px;
+}
+
+
+.searchandfilter li:nth-child(2) input {
+	background-color: transparent;
+	background-image: url("images/search-bar.png");
+	background-size: 100% 100%;
+	color: #fff;
+	height: 28px;
+	left: 9px;
+	margin-left: 2px;
+	padding: 0;
+	position: absolute;
+	text-indent: -9999px;
+	top: 5px;
+	width: 25px;
+}
+
+.searchandfilter li:nth-child{
+	 float:left;
+	  padding-right: 0;
+}
+
+.select_area {
+  display: inline-block;
+  position: relative;
+  width: 252px;
+}
+
+.supplier-search .filter_icon {
+background: none repeat scroll 0 0 transparent;
+color: #252525;
+font-size: 21px;
+left: 8px;
+position: absolute;
+top: 5px;
+z-index: 99999;
+}
+.search_filter{
+	display:block;
+
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+
+}
+
+.search_box {
+  display:inline-block;
+  float: left;
+
+  overflow: hidden;
+}
+
+.item.next {
+
+  height: auto;
+  border: 5px solid black;
+  border-radius: 35px;
+    display:block;
+  overflow:hidden;
+  margin:5px;
+  background:#ddd;
+}
+
+.section{
+	padding:0;
+
+}
+
+
+
+.content_area strong {
+    font-weight: bold;
+}
+
+.page-template-page-crowdsourced .entry-content p{
+
+  text-transform:initial!important;
+}
+
+.crowedsource_footer_content {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  text-transform: initial!important;
+   margin-top: 25px;
+   margin-bottom: 25px;
+  font-family: "Open Sans",serif;
+  font-size: 16px;
+
+  text-align: left;
+}
+
+.crowedsource_footer_content p{
+  font-family: "Open Sans",serif;
+  font-size: 16px;
+  
+  text-align: left;
+}
+
+
+input[type="submit"], #bufferapp_sbtn, #restbut, .triggerme {
+
+  margin-bottom: 20px;
+ 
+}
+
+/********** end **********/

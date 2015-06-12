@@ -3,8 +3,8 @@
 <div class="bar">
 	<h1 class="entry-title">Our Blog</h1>
 </div>
-<div class="section">
-	<section id="content" role="main">
+<div class="section paddedsection">
+	<section id="" role="main">
     <div class="blog-section">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <section class="entry-content">

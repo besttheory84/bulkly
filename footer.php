@@ -4,10 +4,10 @@
 	<section class="info">
     	<img src="<?=get_bloginfo('template_directory');?>/images/white-logo.png" width="160" class="logo" />
         <ul id="social">
-        	<li><a href="#" class="fade" target="_blank"><img src="<?=get_bloginfo('template_directory');?>/images/facebook.png" width="40" /></a></li>
-            <li><a href="#" class="fade" target="_blank"><img src="<?=get_bloginfo('template_directory');?>/images/twitter.png" width="40" /></a></li>
-            <li><a href="#" class="fade" target="_blank"><img src="<?=get_bloginfo('template_directory');?>/images/google.png" width="40" /></a></li>
-            <li><a href="#" class="fade" target="_blank"><img src="<?=get_bloginfo('template_directory');?>/images/linkedin.png" width="40" /></a></li>
+        	<li><a href="http://facebook.com/bulkly" class="fade" target="_blank"><img src="<?=get_bloginfo('template_directory');?>/images/facebook.png" width="40" /></a></li>
+            <li><a href="http://twitter.com/bulkly" class="fade" target="_blank"><img src="<?=get_bloginfo('template_directory');?>/images/twitter.png" width="40" /></a></li>
+            <li><a href="http://plus.google.com/+bulkly/posts" class="fade" target="_blank"><img src="<?=get_bloginfo('template_directory');?>/images/google.png" width="40" /></a></li>
+            <li><a href="http://linkedin.com/company/bulkly" class="fade" target="_blank"><img src="<?=get_bloginfo('template_directory');?>/images/linkedin.png" width="40" /></a></li>
             <div class="clearfix"></div>
         </ul>
     </section>
@@ -31,6 +31,10 @@
 		<script type="text/javascript" src="<?=get_bloginfo('template_directory');?>/js/jquery-ui-timepicker-addon.js"></script>
 		<script type="text/javascript" src="<?=get_bloginfo('template_directory');?>/js/jquery-ui-timepicker-addon-i18n.min.js"></script>
 		<script type="text/javascript" src="<?=get_bloginfo('template_directory');?>/js/jquery-ui-sliderAccess.js"></script>
+		
+		<script src="<?=get_bloginfo('template_directory');?>/js/jquery.isotope.min.js"></script>
+	    <script src="<?=get_bloginfo('template_directory');?>/js/jquery.isotope.perfectmasonry.js"></script>
+		
 <script src="<?=get_bloginfo('template_directory');?>/js/wow.js"></script>
 <script src="<?=get_bloginfo('template_directory');?>/js/scripts.js"></script>
 <script>
